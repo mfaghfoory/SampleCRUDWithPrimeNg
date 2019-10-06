@@ -1,0 +1,38 @@
+<p-fieldset legend="Form info">
+  <form novalidate>
+    <span class="ui-float-label">
+      <input
+        type="text"
+        size="30"
+        pInputText
+        [(ngModel)]="model.name"
+        name="name"
+      />
+      <label for="float-input">Name</label>
+    </span>
+    <br />
+    <span class="ui-float-label">
+      <input
+        type="text"
+        size="30"
+        pInputText
+        [(ngModel)]="model.tel"
+        name="tel"
+      />
+      <label for="float-input">Tel</label>
+    </span>
+    <br />
+    <span class="ui-float-label">
+      <input
+        type="text"
+        size="30"
+        pInputText
+        [(ngModel)]="model.address"
+        name="address"
+      />
+      <label for="float-input">Address</label>
+    </span>
+    <hr />
+    <button type="button" (click)="onSubmit()" pButton label="update"></button>
+  </form>
+</p-fieldset>
